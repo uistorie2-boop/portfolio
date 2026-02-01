@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photography | PK Uvais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <h2 class="logo">PK Uvais</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+
+<section class="work-page">
+  <h1 class="page-title">Photography Projects</h1>
+
+  <div class="gallery">
+    <img src="images/img2.JPG" onclick="openLightbox(this.src)">
+    <img src="images/img3.JPG" onclick="openLightbox(this.src)">
+    <img src="images/img4.JPG" onclick="openLightbox(this.src)">
+    <img src="images/img5.JPG" onclick="openLightbox(this.src)">
+    <img src="images/photo5.jpg" onclick="openLightbox(this.src)">
+    <img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

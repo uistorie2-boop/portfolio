@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PK Uvais | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <h2 class="logo">PK Uvais</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>PK Uvais</span></h1>
+      <p>Graphic Designer • Photographer • Video Editor</p>
+      <button onclick="scrollToSection('work')">View My Work</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/me.jpg" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="cards">
+      <div class="card" onclick="location.href='photography.html'">
+        <img src="images/cover.jpeg">
+        <h3>Product Photography</h3>
+        <p>Commercial Photography</p>
+      </div>
+
+      <div class="card" onclick="location.href='design.html'">
+        <img src="images/POST.jpg">
+        <h3>Social Media Design</h3>
+        <p>Creative Graphic Design</p>
+      </div>
+
+      <div class="card" onclick="location.href='video.html'">
+        <img src="images/video.png">
+        <h3>Cinematic Video</h3>
+        <p>Videography & Editing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate visual creative specializing in graphic design,
+      photography, and video editing. I have 3+ years of experience creating
+      engaging visual content for brands, social media, and commercial projects.
+    </p>
+    <p>
+      I focus on clean, impactful design and cinematic storytelling that connects
+      with audiences. Currently open to freelance and full-time opportunities.
+    </p>
+  </section>
+  
+  <section class="stats reveal">
+  <div class="stat">
+    <h2 class="counter" data-target="3">0</h2>
+    <p>Years Experience</p>
+  </div>
+  <div class="stat">
+    <h2 class="counter" data-target="120">0</h2>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat">
+    <h2 class="counter" data-target="80">0</h2>
+    <p>Happy Clients</p>
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>Adobe Photoshop</span>
+      <span>Illustrator</span>
+      <span>Premiere Pro</span>
+      <span>After Effects</span>
+      <span>Photography</span>
+      <span>Cinematic Editing</span>
+      <span>Branding</span>
+      <span>Poster Design</span>
+      <span>Color Grading</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact reveal">
+  <h2>Let’s Work Together</h2>
+  <form action="https://formsubmit.co/pkpm69@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+
+  
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
